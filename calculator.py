@@ -74,7 +74,7 @@ try:
             hyp = sqrt((adj ** 2) + (opp ** 2))
             print("")
             print("The Pythagoras thorem of the Triangle is %.2f " % hyp)
-    
+
         elif calc == 2:
             hyp = float(input("The Triangle Hypotenus: "))
             print("")
@@ -90,7 +90,7 @@ try:
             opp = sqrt((hyp ** 2) - (adj ** 2))
             print("")
             print("The Pythagoras thorem of the Triangle is %.2f " % opp)
-    
+            
         else:
             print("")
             print("Invalid Number or Operator")
