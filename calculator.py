@@ -31,7 +31,7 @@ print("")
 print("[3] Degree Calculator")
 print("")
 
-print("[4] Co-ordinate Calculator")
+print("[4] Distance Calculator")
 print("")
 
 print("[5] Quadratic Calculator")
