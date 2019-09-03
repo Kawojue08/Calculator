@@ -28,7 +28,7 @@ print("")
 print("[2] Basic Calculator")
 print("")
 
-print("[3] Degree Calculator")
+print("[3] Temperature Converter")
 print("")
 
 print("[4] Distance Calculator")
@@ -38,6 +38,9 @@ print("[5] Quadratic Calculator")
 print("")
 
 print("[6] Area of Circle Calculator")
+print("")
+
+print("[7] Co-ordinate Calculator")
 print("")
 
 try:
@@ -74,7 +77,7 @@ try:
             hyp = sqrt((adj ** 2) + (opp ** 2))
             print("")
             print("The Pythagoras thorem of the Triangle is %.2f " % hyp)
-
+    
         elif calc == 2:
             hyp = float(input("The Triangle Hypotenus: "))
             print("")
@@ -90,7 +93,7 @@ try:
             opp = sqrt((hyp ** 2) - (adj ** 2))
             print("")
             print("The Pythagoras thorem of the Triangle is %.2f " % opp)
-            
+    
         else:
             print("")
             print("Invalid Number or Operator")
@@ -109,15 +112,15 @@ try:
         print("")
 
         if opr == "+":
-            print("Answer equals = %.2f" % (num1 + num2))
+            print(num1, "+", num2, "= %.2f" % (num1 + num2))
         elif opr == "-":
-            print("Answer equals = %.2f" % (num1 - num2))
+            print(num1, "-", num2, "= %.2f" % (num1 - num2))
         elif opr == "/":
-            print("Answer equals = %.2f" % (num1 / num2))
+            print(num1, "/", num2, "= %.2f" % (num1 / num2))
         elif opr == "*":
-            print("Answer equals = %.2f" % (num1 * num2))
+            print(num1, "X", num2, "= %.2f" % (num1 * num2))
         elif opr == "^":
-            print("Answer equals = %.2f" % pow(num1, num2))
+            print(num1, "^", num2, "= %.2f" % (num1 ** num2))
         else:
             print("Invalid operator")
 
@@ -149,19 +152,23 @@ try:
         print("Example; x(1, 4) assuming you are give this as the first part so the firstpart which is 1 will be the  one to")
         print("input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part.")
         print("")
-    
+        
         A = {}
-        A[0] = float(input("Input the first x coordinate: "))
-        A[1] = float(input("Input the second x coordinate: "))
+        A[0] = float(input("The first x: "))
+        A[1] = float(input("The second x: "))
+        print("(", A[0], ",", A[1], ")")
         print("")
-        
+
         B = {}
-        B[0] = float(input("Input the first y coordinate: "))
-        B[1] = float(input("Input the second y coordinate: "))
-        AB = sqrt((B[0] - A[0])**(2) + (B[1] - A[1])**(2))
+        B[0] = float(input("The first y: "))
+        B[1] = float(input("The second y: "))
+        print("(", B[0], ",", B[1], ")")
         print("")
-        
-        print("The coordinates is %.4f" % AB)
+
+        AB = sqrt((((B[0] - A[0]) ** 2) + (B[1] - A[1]) ** 2))
+        print("")
+
+        print("The Distance is %.3f" % AB)
     
     elif opt == 5:
         a = float(input("a = "))
@@ -197,7 +204,7 @@ try:
         print("[2] Area of a Circle when you know the Radius")
         print("")
 
-        print("[3] Area of a Circle when you know the Circuference")
+        print("[3] Area of a Circle when you know the Circumference")
         print("")
 
         circ = int(input("Your Operator: "))
@@ -218,12 +225,39 @@ try:
         elif circ == 3:
             C = float(input("Circumference: "))
             A = (C**2) / (4*pi)
+            print("")
             print("Area = %.3f" % A)
 
         else:
             print("")
-            print("Thanks")
+            print("Invalid Number or Operator")
     
+    elif opt == 7:
+        print("Example; x(1, 4) assuming you are give this as the first part so the firstpart which is 1 will be the  one to")
+        print("input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part.")
+        print("")
+
+        C = {}
+        C[0] = float(input("The first x co-ordinate: "))
+        C[1] = float(input("The second x co-ordinate: "))
+        print("(", C[0], ",", C[1], ")")
+        print("")
+
+        D = {}
+        D[0] = float(input("The first y co-ordinate: "))
+        D[1] = float(input("The second y co-ordinate: "))
+        print("(", D[0], ",", D[1], ")")
+        print("")
+
+        CC = (((C[0]) + (D[0])) / (2))
+
+        DD = (((C[1]) + (D[1])) / (2))
+
+        DC = (CC, DD)
+        print("")
+
+        print("The Co-ordinates are " + str(DC))
+        
     else:
         print("")
         print("Invalid Input")
