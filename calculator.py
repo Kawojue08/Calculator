@@ -7,41 +7,15 @@ print("|   \/   |   /      \     |       |        |       |")
 print("|        |  /        \    |       |        |  _____|")
 print("")
 
-print("This Project was created by Kawojue Raheem")
-print("")
+print("This Project was created by Kawojue Raheem\n ""\nFacebook: Kawojue Raheem CoderHacker\n """)
 
-print("Facebook: Kawojue Raheem CoderHacker")
-print("")
+print("Whatsapp: +2349059137330\n ""\nGmail: kawojue08@gmail.com\n """)
 
-print("Whatsapp: +2349059137330")
-print("")
+print("IG: coderhacker_kawojue\n ""\n[1] Pythagorean Theorem Calculator\n "" \n[2] Basic Calculator\n """)
 
-print("Gmail: kawojue08@gmail.com")
-print("")
+print("[3] Temperature Converter\n ""\n[4] Distance Calculator\n ""\n[5] Quadratic Calculator\n """)
 
-print("IG: coderhacker_kawojue")
-print("")
-
-print("[1] Pythagorean Theorem Calculator")
-print("")
-
-print("[2] Basic Calculator")
-print("")
-
-print("[3] Temperature Converter")
-print("")
-
-print("[4] Distance Calculator")
-print("")
-
-print("[5] Quadratic Calculator")
-print("")
-
-print("[6] Area of Circle Calculator")
-print("")
-
-print("[7] Co-ordinate Calculator")
-print("")
+print("[6] Area of Circle Calculator\n ""\n[7] Co-ordinate Calculator\n """)
 
 try:
     opt = int(input("Enter your Operator: "))
@@ -58,14 +32,11 @@ try:
         print("  adj  ")
         print("")
 
-        print("[1] Pythagoras theorem calculator when you know the opp and adj")
-        print("")
+        print("[1] Pythagoras theorem calculator when you know the opp and adj\n """)
 
-        print("[2] Pythagoras theorem calculator when you know the adj and hyp")
-        print("")
+        print("[2] Pythagoras theorem calculator when you know the adj and hyp\n """)
 
-        print("[3] Pythagoras theorem calculator when you know the hyp and opp")
-        print("")
+        print("[3] Pythagoras theorem calculator when you know the hyp and opp\n """)
 
         calc = int(input("Enter your operator: "))
         print("")
@@ -98,9 +69,7 @@ try:
             print("")
             print("Invalid Number or Operator")
     elif opt == 2:
-        print("The operator must be multiplication, division, exponent, etc....")
-        print("The valid operator are (*, /, ^, +, -). ")
-        print("")
+        print("The operator must be multiplication, division, exponent, etc....\nThe valid operator are (*, /, ^, +, -).\n """)
 
         num1 = float(input("Enter the first number: "))
         print("")
@@ -125,10 +94,7 @@ try:
             print("Invalid operator")
 
     elif opt == 3:
-        print("[1] Changing of Degree Celcius to Degree Fahrenheit")
-        print("")
-        print("[2] Changing of Degree Farenheit to Degree Celcius")
-        print("")
+        print("[1] Changing of Degree Celcius to Degree Fahrenheit\n ""\n[2] Changing of Degree Farenheit to Degree Celcius\n """)
 
         num = int(input("Enter your operator: "))
         print("")
@@ -150,8 +116,7 @@ try:
             print("Invalid Input")
     elif opt == 4:
         print("Example; x(1, 4) assuming you are give this as the first part so the firstpart which is 1 will be the  one to")
-        print("input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part.")
-        print("")
+        print("input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part.\n """)
         
         A = {}
         A[0] = float(input("The first x: "))
@@ -195,17 +160,11 @@ try:
             print("Complex Number")
 
     elif opt == 6:
-        print("Area of a Circle")
-        print("")
+        print("Area of a Circle\n """)
 
-        print("[1] Area of a Circle when you know the Diameter")
-        print("")
+        print("[1] Area of a Circle when you know the Diameter\n ""\n[2] Area of a Circle when you know the Radius\n """)
 
-        print("[2] Area of a Circle when you know the Radius")
-        print("")
-
-        print("[3] Area of a Circle when you know the Circumference")
-        print("")
+        print("[3] Area of a Circle when you know the Circumference\n """)
 
         circ = int(input("Your Operator: "))
         print("")
@@ -229,13 +188,11 @@ try:
             print("Area = %.3f" % A)
 
         else:
-            print("")
             print("Invalid Number or Operator")
     
     elif opt == 7:
         print("Example; x(1, 4) assuming you are give this as the first part so the firstpart which is 1 will be the  one to")
-        print("input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part.")
-        print("")
+        print("input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part. \n """)
 
         C = {}
         C[0] = float(input("The first x co-ordinate: "))
