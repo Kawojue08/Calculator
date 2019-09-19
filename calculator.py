@@ -1,20 +1,40 @@
 from math import *
+mat = '''
+|\      /|      /\   ___________  |        |  ______
+| \    / |     /  \       |       |        | |       
+|  \  /  |    /____\      |       |--------| |______ 
+|   \/   |   /      \     |       |        |       |
+|        |  /        \    |       |        |  _____|'''
+print(mat)
 
-print("|\      /|      /\   ___________  |        |  ______")
-print("| \    / |     /  \       |       |        | |       ")
-print("|  \  /  |    /____\      |       |--------| |______ ")
-print("|   \/   |   /      \     |       |        |       |")
-print("|        |  /        \    |       |        |  _____|\n """)
+info = '''
+This Project was created by Kawojue Raheem
 
-print("This Project was created by Kawojue Raheem\n ""\nFacebook: Kawojue Raheem CoderHacker\n """)
+Facebook: Kawojue Raheem CoderHacker
 
-print("Whatsapp: +2349059137330\n ""\nGmail: kawojue08@gmail.com\n """)
+Whatsapp: +2349059137330
 
-print("IG: coderhacker_kawojue\n ""\n[1] Pythagorean Theorem Calculator\n "" \n[2] Basic Calculator\n """)
+Gmail: kawojue08@gmail.com
 
-print("[3] Temperature Converter\n ""\n[4] Distance Calculator\n ""\n[5] Quadratic Calculator\n """)
+IG: coderhacker_kawojue
 
-print("[6] Area of Circle Calculator\n ""\n[7] Co-ordinate Calculator\n """)
+[1] Pythagorean Theorem Calculator
+
+[2] Basic Calculator
+
+[3] Temperature Converter
+
+[4] Distance Calculator
+
+[5] Quadratic Calculator
+
+[6] Area of Circle Calculator
+
+[7] Co-ordinate Calculator
+'''
+print(info)
+
+distance = '''Example; x(1, 4) assuming you are give this as the first part so the firstpart which is 1 will be the  one to input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part. '''
 
 opt = int(input("Enter your Operator: "))
 print("")
@@ -79,9 +99,9 @@ elif opt == 2:
     print("")
 
     if opr == "+":
-        print(num1, "+", num2, "= %.2f" % (num1 + num2))
+        print(num1, "+", num2, "=", (num1 + num2))
     elif opr == "-":
-        print(num1, "-", num2, "= %.2f" % (num1 - num2))
+        print(num1, "-", num2, "=", (num1 - num2))
     elif opr == "/":
         print(num1, "/", num2, "= %.3f" % (num1 / num2))
     elif opr == "*":
@@ -113,9 +133,8 @@ elif opt == 3:
         print("")
         print("Invalid Input")
 elif opt == 4:
-    print("Example; x(1, 4) assuming you are give this as the first part so the firstpart which is 1 will be the  one to")
-    print("input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part.\n """)
-        
+    print(distance)
+    
     A = {}
     A[0] = float(input("The first x: "))
     A[1] = float(input("The second x: "))
@@ -156,11 +175,15 @@ elif opt == 5:
         print("Complex Number")
 
 elif opt == 6:
-    print("Area of a Circle\n """)
+    cir = '''Area of a Circle
+    
+    [1] Area of a Circle when you know the Diameter
+    
+    [2] Area of a Circle when you know the Radius
 
-    print("[1] Area of a Circle when you know the Diameter\n ""\n[2] Area of a Circle when you know the Radius\n """)
-
-    print("[3] Area of a Circle when you know the Circumference\n """)
+    [3] Area of a Circle when you know the Circumference 
+    '''
+    print(cir)
 
     circ = int(input("Your Operator: "))
     print("")
@@ -187,8 +210,7 @@ elif opt == 6:
         print("Invalid Number or Operator")
     
 elif opt == 7:
-    print("Example; x(1, 4) assuming you are give this as the first part so the firstpart which is 1 will be the  one to")
-    print("input first then follow by the second x part follow by the y(1, 3) first y part and the second of the y part. \n """)
+    print(distance)
 
     C = {}
     C[0] = float(input("The first x co-ordinate: "))
