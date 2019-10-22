@@ -8,33 +8,24 @@ try:
     |   \/   |   /      \     |       |        |       |
     |        |  /        \    |       |        |  _____|
     '''
-
     print(mat)
-
     info = '''
     This Project was created by Kawojue Raheem
-    
-    Facebook: Kawojue Raheem CoderHacker
-    
+    Facebook: Kawojue Raheem Olumuyiwa (CoderHacker)
     Whatsapp: +2349059137330
-    
     Gmail: kawojue08@gmail.com
-    
     IG: coderhacker_kawojue
-    
+
     [1] Pythagorean Theorem Calculator
-    
     [2] Basic Calculator
-    
     [3] Temperature Converter
-    
     [4] Distance Calculator
-    
     [5] Quadratic Calculator
-    
     [6] Area of Circle Calculator
-    
     [7] Co-ordinate Calculator
+    [8] Average (Mean) Calculator
+    [9] Multiplication Table Generator
+
     '''
     print(info)
 
@@ -42,18 +33,24 @@ try:
     which is 1 will be the one to input first then follow by the second x part follow by the y(1, 3) first y part and 
     the second of the y part. '''
 
-    opt = int(input("Enter your Operator: "))
+    op = float(input("Enter your Operator: "))
+    opt = round(op)
     print("")
 
     if opt == 1:
 
-        print("Pythagorean theorem\n """)
-        print("     /|")
-        print("    / |")
-        print("hyp/  | opp")
-        print("  /   |")
-        print(" /____|")
-        print("  adj  \n """)
+        tri = '''
+            Pythagorean theorem
+
+                    /|
+                   / |
+               hyp/  | opp
+                 /   |
+                /____|
+                  adj
+
+        '''
+        print(tri)
 
         print("[1] Pythagoras theorem calculator when you know the opp and adj\n """)
 
@@ -81,9 +78,9 @@ try:
             print("The Pythagoras theorem of the Triangle is %.3f " % ajd)
 
         elif pytri == 3:
-            phy = int(input("The Triangle Hypotenuse: "))
+            phy = float(input("The Triangle Hypotenuse: "))
             print("")
-            jad = int(input("The Triangle Opposite: "))
+            jad = float(input("The Triangle Opposite: "))
             pop = ((phy ** 2) - (jad ** 2)) ** (1 / 2)
             print("")
             print("The Pythagoras theorem of the Triangle is %.3f " % pop)
@@ -160,14 +157,10 @@ try:
         print("The Distance is %.3f" % AB)
 
     elif opt == 5:
+        print("Quadratic")
         a = float(input("a = "))
-        print("")
-
         b = float(input("b = "))
-        print("")
-
         c = float(input("c = "))
-        print("")
 
         d = b * b - 4 * a * c
         if d > 0:
@@ -185,11 +178,11 @@ try:
 
     elif opt == 6:
         cir = '''Area of a Circle
-    
+
         [1] Area of a Circle when you know the Diameter
-    
+
         [2] Area of a Circle when you know the Radius
-    
+
         [3] Area of a Circle when you know the Circumference 
         '''
         print(cir)
@@ -238,6 +231,32 @@ try:
 
         print("The Co-ordinates are " + str(DC))
 
+    elif opt == 8:
+        print("Average Calculator")
+        print("")
+        num = int(input("Limit: "))
+        print("")
+        count = 0
+        num1 = []
+
+        for i in range(1, num + 1):
+            number = float(input("Number: "))
+            num1.append(number)
+        for j in num1:
+            count += j
+        k = len(num1)
+        avg = count / k
+        print("")
+        print("Average = %4f" % avg)
+
+    elif opt == 9:
+        print("Multiplication Table Generator")
+        print("")
+        j = int(input("Limit: "))
+        n = float(input("Number: "))
+        print("")
+        for gen in range(1, j + 1):
+            print("|", n, "x", gen, "=", gen * n)
     else:
         print("Invalid Input")
 except ValueError:
