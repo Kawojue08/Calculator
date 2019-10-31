@@ -1,5 +1,4 @@
 # Installation
-# This is my first project
 
 $ pkg install git
 
