@@ -1,26 +1,26 @@
 from math import *
 
 info = '''
-    |\      /|      /\   ___________  |        |  ______
+    |\      /|      /\   ===========  |        |  ======
     | \    / |     /  \       |       |        | |       
-    |  \  /  |    /____\      |       |--------| |______ 
+    |  \  /  |    /====\      |       |========| |===== 
     |   \/   |   /      \     |       |        |       |
-    |        |  /        \    |       |        |  _____|
+    |        |  /        \    |       |        |  =====|
 
-
-    This Project was created by Kawojue Raheem
-    Facebook: Kawojue Raheem Olumuyiwa (CoderHacker)
-    Whatsapp: +2349059137330
-    Gmail: kawojue08@gmail.com
-    IG: coderhacker_kawojue
-
+    =====================================================
+   | Created by Kawojue Raheem Olumuyiwa                 |
+   | Facebook: Kawojue Raheem Olumuyiwa (CoderHacker)    |
+   | Whatsapp: +2349059137330                            |
+   | Gmail: kawojue08@gmail.com                          |
+   | IG: coderhacker_kawojue                             |
+    ===================================================
     '''
 print(info)
 
 while True:
     try:
         topic = ''' 
-                OPERATOR
+                OPERATORS
     [1] Pythagorean Theorem Calculator
     [2] Basic Calculator
     [3] Temperature Converter
@@ -30,12 +30,14 @@ while True:
     [7] Co-ordinate Calculator
     [8] Average (Mean) Calculator
     [9] Multiplication Table Generator
-    [10] Exit
+    [10] Factorial Calculator
+    [11] Fibonacci Generator
+    [12] Exit
         '''
         print(topic)
-        distance = '''Example; x(1, 4) assuming you are give this as the first part so the first part 
-        which is 1 will be the one to input first then follow by the second x part follow by the y(1, 3) first y part
-        and the second of the y part. '''
+        distance = '''Example; x(1, 4) assuming you are given this as the first part so the first part 
+        which is 1 will be the one to input first then follow by the second x part, follow by the y(1, 3) first y part
+        and then second of the y part. '''
 
         op = float(input("Enter your Operator: "))
         opt = round(op)
@@ -254,7 +256,7 @@ while True:
             print("Average = %4f" % avg)
 
         elif opt == 9:
-            print("Multiplication Table Generator")
+            print("         Multiplication Table Generator          ")
             print("")
             j = int(input("Limit: "))
             n = float(input("Number: "))
@@ -263,14 +265,32 @@ while True:
                 print("|", n, "x", gen, "=", gen * n)
 
         elif opt == 10:
+            print("        FACTORIAL            ")
+            fac = int(input("Number: "))
+            num = 1
+            for i in range(1, fac + 1):
+                num *= i
+            print(str(fac) + "!", "=", num)
+
+        elif opt == 11:
+            print("           Fibonacci Generator          ")
+            fib = int(input("Fibonacci: "))
+            x, y = 0, 1
+            for q in range(fib):
+                x, y = y, x + y
+            print("")
+            print("The " + str(fib) + " Fibonacci number is " + str(x))
+
+        elif opt == 12:
             print("Thanks for using my Script")
             exit()
         else:
             print("Invalid Input")
     except ValueError:
-        print("")
         print("The value you entered was incorrect (Error)")
     except TypeError:
         print("Complex Number")
     except ZeroDivisionError:
         print("Undefined")
+    except OverflowError:
+        print("Result too Large")
