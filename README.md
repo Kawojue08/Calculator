@@ -1,5 +1,7 @@
 # Installation
 
+$ pkg update && pkg upgrade -y
+
 $ pkg install git
 
 $ pkg install python python2
