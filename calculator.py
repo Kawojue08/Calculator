@@ -1,9 +1,9 @@
 from math import *
 
 info = '''
-    |\      /|      /\   ===========  |        |  ======
+    |\      /|      /\   ===========  |        | |======
     | \    / |     /  \       |       |        | |       
-    |  \  /  |    /====\      |       |========| |===== 
+    |  \  /  |    /====\      |       |========| |=====|
     |   \/   |   /      \     |       |        |       |
     |        |  /        \    |       |        |  =====|
 
@@ -96,7 +96,7 @@ while True:
 
         elif opt == 2:
             print(
-                "The operator must be multiplication, division, exponent, etc....\nThe valid operator are "
+                "The operator must be multiplication, division, exponent, etc....\nThe valid operators are "
                 "(*, /, ^, +, -).\n """)
 
             num1 = float(input("Enter the first number: "))
@@ -113,11 +113,11 @@ while True:
             elif opr == "-":
                 print(num1, "-", num2, "=", (num1 - num2))
             elif opr == "/":
-                print(num1, "/", num2, "= %.3f" % (num1 / num2))
+                print(num1, "/", num2, "= %.5f" % (num1 / num2))
             elif opr == "*":
-                print(num1, "x", num2, "= %.2f" % (num1 * num2))
+                print(num1, "x", num2, "= " + str(num1 * num2))
             elif opr == "^":
-                print(num1, "^", num2, "= %.2f" % (num1 ** num2))
+                print(num1, "^", num2, "= %.5f" % (num1 ** num2))
             else:
                 print("Invalid operator")
 
@@ -150,12 +150,12 @@ while True:
             A = dict()
             A[0] = float(input("The first x: "))
             A[1] = float(input("The second x: "))
-            print("(", A[0], ",", A[1], ")\n """)
+            print("(" + str(A[0]) + ",", str(A[1]) + ")\n """)
 
             B = dict()
             B[0] = float(input("The first y: "))
             B[1] = float(input("The second y: "))
-            print("(", B[0], ",", B[1], ")\n """)
+            print("(" + str(B[0]) + ",", str(B[1]) + ")\n """)
 
             AB = sqrt((((B[0] - A[0]) ** 2) + (B[1] - A[1]) ** 2))
             print("")
@@ -223,12 +223,12 @@ while True:
             C = dict()
             C[0] = float(input("The first x co-ordinate: "))
             C[1] = float(input("The second x co-ordinate: "))
-            print("(", C[0], ",", C[1], ")\n """)
+            print("(" + str(C[0]) + ",", str(C[1]) + ")\n """)
 
             D = dict()
             D[0] = float(input("The first y co-ordinate: "))
             D[1] = float(input("The second y co-ordinate: "))
-            print("(", D[0], ",", D[1], ")\n """)
+            print("(" + str(D[0]) + ",", str(D[1]) + ")\n """)
 
             CC = (((C[0]) + (D[0])) / 2)
             DD = (((C[1]) + (D[1])) / 2)
@@ -274,6 +274,10 @@ while True:
 
         elif opt == 11:
             print("           Fibonacci Generator          ")
+            q = """
+                [1] Generate
+                [2] 
+                """
             fib = int(input("Fibonacci: "))
             x, y = 0, 1
             for q in range(fib):
