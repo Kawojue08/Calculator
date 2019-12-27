@@ -32,7 +32,7 @@ while True:
     [9] Multiplication Table Generator
     [10] Factorial Calculator
     [11] Fibonacci Generator
-    [12] Exit
+    [0] Exit
         '''
         print(topic)
         distance = '''Example; x(1, 4) assuming you are given this as the first part so the first part 
@@ -46,24 +46,23 @@ while True:
         if opt == 1:
 
             tri = '''
-                Pythagorean theorem
+    Pythagorean theorem
     
-                        /|
-                       / |
-                   hyp/  | opp
-                     /   |
-                    /____|
-                      adj
-    
+           /|
+          / |
+      hyp/  | opp
+        /   |
+       /____|
+        adj
             '''
             print(tri)
 
-            print("[1] Pythagoras theorem calculator when you know the opp and adj\n """)
-
-            print("[2] Pythagoras theorem calculator when you know the adj and hyp\n """)
-
-            print("[3] Pythagoras theorem calculator when you know the hyp and opp\n """)
-
+            j = """
+    [1] Pythagoras theorem calculator when you know the opp and adj
+    [2] Pythagoras theorem calculator when you know the adj and hyp
+    [3] Pythagoras theorem calculator when you know the hyp and opp
+"""
+            print(j)
             pytri = int(input("Enter your operator: "))
             print("")
 
@@ -185,11 +184,9 @@ while True:
         elif opt == 6:
             cir = '''Area of a Circle
     
-            [1] Area of a Circle when you know the Diameter
-    
-            [2] Area of a Circle when you know the Radius
-    
-            [3] Area of a Circle when you know the Circumference 
+    [1] Area of a Circle when you know the Diameter
+    [2] Area of a Circle when you know the Radius
+    [3] Area of a Circle when you know the Circumference 
             '''
             print(cir)
 
@@ -285,7 +282,7 @@ while True:
             print("")
             print("The " + str(fib) + " Fibonacci number is " + str(x))
 
-        elif opt == 12:
+        elif opt == 0:
             print("Thanks for using my Script")
             exit()
         else:
