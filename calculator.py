@@ -271,10 +271,6 @@ while True:
 
         elif opt == 11:
             print("           Fibonacci Generator          ")
-            q = """
-                [1] Generate
-                [2] 
-                """
             fib = int(input("Fibonacci: "))
             x, y = 0, 1
             for q in range(fib):
