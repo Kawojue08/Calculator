@@ -1,10 +1,10 @@
 # Installation
 
-$ pkg update && pkg upgrade -y
+$ apt update && apt upgrade -y
 
 $ pkg install git
 
-$ pkg install python python2
+$ pkg install python
 
 $ git clone https://github.com/Kawojue08/calculator.py.git
 
